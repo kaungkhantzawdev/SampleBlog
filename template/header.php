@@ -10,6 +10,9 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="<?php echo $url;?>/assets/vendor/bootstrap_5/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?php echo $url;?>/assets/vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="<?php echo $url?>/assets/css/datatable/datatable_bot5.css">
+    <link rel="stylesheet" href="<?php echo $url?>/assets/css/datatable/datable-bootstrap5.css">
+    <link rel="stylesheet" href="<?php echo $url?>/assets/vendor/summernote/summernote-bs4.min.css">
     <link rel="stylesheet" href="<?php echo $url;?>/assets/css/style.css">
 
 </head>
@@ -36,16 +39,14 @@
                             </button>
 
                             <div class="d-none d-md-block">
-                                <form action="" class="row p-0">
-                                    <div class="col-10 pe-0">
-                                        <input type="text" class="form-control" id="search" placeholder="Search everything">
-                                    </div>
-                                    <div class="col-1">
-                                        <button class="btn btn-light font-weight-bold">
-                                            <i class="feather-search text-primary"></i>
-                                        </button>
-                                    </div>
-                                </form>
+                                <a href="<?php echo $url; ?>/post_add.php" class="">
+                                    <button class="btn btn-light text-primary">
+                                        <i class="feather-plus-circle me-2"></i>
+                                        <sapn>
+                                            Quick Post
+                                        </sapn>
+                                    </button>
+                                </a>
                             </div>
 
                             <div class="">
@@ -56,10 +57,10 @@
                                     </a>
 
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="<?php echo $url; ?>/wallet.php"><i class="feather-dollar-sign"></i> Wallet</a></li>
+                                        <li><a class="dropdown-item" href="<?php echo $url; ?>/index.php"><i class="feather-arrow-right-circle"></i> Go to News</a></li>
                                         <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item text-danger" href="logout.php"><i class="feather-log-out"></i> Log out</a></li>
+                                        <li><a class="dropdown-item text-danger" href="<?php echo $url; ?>/logout.php"><i class="feather-log-out"></i> Log out</a></li>
                                     </ul>
                                 </div>
                             </div>
